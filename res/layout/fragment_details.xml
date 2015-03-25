@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:useDefaultMargins="true" >
+
+    <TextView
+        android:id="@+id/titleLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="@string/label_title" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="0" />
+
+    <TextView
+        android:id="@+id/phoneLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/label_director" />
+
+    <TextView
+        android:id="@+id/directorTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="1" />
+
+    <TextView
+        android:id="@+id/genreLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="@string/label_genre" />
+
+    <TextView
+        android:id="@+id/genreTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="2" />
+    
+    <TextView
+        android:id="@+id/releaseDateLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:text="@string/label_release_date" />
+
+    <TextView
+        android:id="@+id/releaseDateTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="3" />
+    
+    <TextView
+        android:id="@+id/ratingLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:text="@string/label_raiting" />
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="4" />
+
+    <TextView
+        android:id="@+id/yearLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:text="@string/label_year" />
+
+    <TextView
+        android:id="@+id/yearTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="5" />
+    
+    <TextView
+        android:id="@+id/durationLabelTextView"
+        style="@style/ContactLabelTextView"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:text="@string/label_duration" />
+
+    <TextView
+        android:id="@+id/durationTextView"
+        style="@style/ContactTextView"
+        android:layout_column="1"
+        android:layout_row="6" />
+
+</GridLayout>
+
+</ScrollView>
