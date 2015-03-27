@@ -36,7 +36,7 @@ public class AddEditFragment extends Fragment
    private EditText titleEditText;
    private EditText directorEditText;
    private EditText genreEditText;
-   private EditText releaseDateEditText;
+   private EditText writerEditText;
    private EditText ratingEditText;
    private EditText yearEditText;
    private EditText durationEditText;
@@ -72,7 +72,7 @@ public class AddEditFragment extends Fragment
       titleEditText = (EditText) view.findViewById(R.id.titleEditText);
       directorEditText = (EditText) view.findViewById(R.id.directorEditText);
       genreEditText = (EditText) view.findViewById(R.id.genreEditText);
-      releaseDateEditText = (EditText) view.findViewById(R.id.releaseDateEditText);
+      writerEditText = (EditText) view.findViewById(R.id.writerEditText);
       ratingEditText = (EditText) view.findViewById(R.id.ratingEditText);
       yearEditText = (EditText) view.findViewById(R.id.yearEditText);
       durationEditText = (EditText) view.findViewById(R.id.durationEditText);
@@ -85,7 +85,7 @@ public class AddEditFragment extends Fragment
          titleEditText.setText(contactInfoBundle.getString("title"));  
          directorEditText.setText(contactInfoBundle.getString("director"));  
          genreEditText.setText(contactInfoBundle.getString("genre"));  
-         releaseDateEditText.setText(contactInfoBundle.getString("releaseDate"));  
+         writerEditText.setText(contactInfoBundle.getString("writer"));  
          ratingEditText.setText(contactInfoBundle.getString("rating"));  
          yearEditText.setText(contactInfoBundle.getString("year"));  
          durationEditText.setText(contactInfoBundle.getString("duration"));  
@@ -169,7 +169,7 @@ public class AddEditFragment extends Fragment
             titleEditText.getText().toString(),
             directorEditText.getText().toString(), 
             genreEditText.getText().toString(), 
-            releaseDateEditText.getText().toString(),
+            writerEditText.getText().toString(),
             ratingEditText.getText().toString(), 
             yearEditText.getText().toString(), 
             durationEditText.getText().toString());
@@ -180,7 +180,7 @@ public class AddEditFragment extends Fragment
             titleEditText.getText().toString(),
             directorEditText.getText().toString(), 
             genreEditText.getText().toString(), 
-            releaseDateEditText.getText().toString(),
+            writerEditText.getText().toString(),
             ratingEditText.getText().toString(), 
             yearEditText.getText().toString(), 
             durationEditText.getText().toString());

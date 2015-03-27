@@ -51,14 +51,14 @@
         android:layout_row="2" />
     
     <TextView
-        android:id="@+id/releaseDateLabelTextView"
+        android:id="@+id/writerLabelTextView"
         style="@style/ContactLabelTextView"
         android:layout_column="0"
         android:layout_row="3"
-        android:text="@string/label_release_date" />
+        android:text="@string/label_writer" />
 
     <TextView
-        android:id="@+id/releaseDateTextView"
+        android:id="@+id/writerTextView"
         style="@style/ContactTextView"
         android:layout_column="1"
         android:layout_row="3" />

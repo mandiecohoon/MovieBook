@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 public class DatabaseConnector 
 {
    // database name
-   private static final String DATABASE_NAME = "UserMovie";
+   private static final String DATABASE_NAME = "MoviesDatabase";
       
    private SQLiteDatabase database; // for interacting with the database
    private DatabaseOpenHelper databaseOpenHelper; // creates the database
@@ -42,13 +42,13 @@ public class DatabaseConnector
 
    // inserts a new contact in the database
    public long insertContact(String title, String director, String genre,  
-      String releaseDate, String rating, String year, String duration) 
+      String writer, String rating, String year, String duration) 
    {
       ContentValues newContact = new ContentValues();
       newContact.put("title", title);
       newContact.put("director", director);
       newContact.put("genre", genre);
-      newContact.put("releaseDate", releaseDate);
+      newContact.put("writer", writer);
       newContact.put("rating", rating);
       newContact.put("year", year);
       newContact.put("duration", duration);
@@ -61,13 +61,13 @@ public class DatabaseConnector
 
    // updates an existing contact in the database
    public void updateContact(long id, String title, String director, 
-      String genre, String releaseDate, String rating, String year, String duration) 
+      String genre, String writer, String rating, String year, String duration) 
    {
       ContentValues editContact = new ContentValues();
       editContact.put("title", title);
       editContact.put("director", director);
       editContact.put("genre", genre);
-      editContact.put("releaseDate", releaseDate);
+      editContact.put("writer", writer);
       editContact.put("rating", rating);
       editContact.put("year", year);
       editContact.put("duration", duration);
@@ -116,7 +116,7 @@ public class DatabaseConnector
          String createQuery = "CREATE TABLE movies" +
             "(_id integer primary key autoincrement," +
             "title TEXT, director TEXT, genre TEXT, " +
-            "releaseDate TEXT, rating TEXT, year TEXT, duration TEXT);";
+            "writer TEXT, rating TEXT, year TEXT, duration TEXT);";
                   
          db.execSQL(createQuery); // execute query to create the database
       } 

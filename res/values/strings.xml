@@ -10,7 +10,7 @@
     <string name="hint_title">Title (Required)</string>
     <string name="hint_director">Director</string>
     <string name="hint_genre">Genre</string>
-    <string name="hint_releaseDate">ReleaseDate</string>
+    <string name="hint_writer">Writer</string>
     <string name="hint_rating">Rating</string>
     <string name="hint_year">Year</string>
     <string name="hint_duration">Duration</string>
@@ -19,7 +19,7 @@
     <string name="label_director">Director:</string>
     <string name="label_genre">Genre:</string>
     <string name="label_raiting">Rating:</string>
-    <string name="label_release_date">Release Date:</string>
+    <string name="label_writer">Writer:</string>
     <string name="label_duration">Duration:</string>
     <string name="confirm_title">Are You Sure?</string>
     <string name="confirm_message">This will permanently delete the movie</string>

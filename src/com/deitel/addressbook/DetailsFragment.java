@@ -37,7 +37,7 @@ public class DetailsFragment extends Fragment
    private TextView titleTextView; // displays contact's name 
    private TextView directorTextView; // displays contact's phone
    private TextView genreTextView; // displays contact's email
-   private TextView releaseDateTextView; // displays contact's street
+   private TextView writerTextView; // displays contact's street
    private TextView ratingTextView; // displays contact's city
    private TextView yearTextView; // displays contact's state
    private TextView durationTextView; // displays contact's zip
@@ -87,7 +87,7 @@ public class DetailsFragment extends Fragment
       titleTextView = (TextView) view.findViewById(R.id.titleTextView);
       directorTextView = (TextView) view.findViewById(R.id.directorTextView);
       genreTextView = (TextView) view.findViewById(R.id.genreTextView);
-      releaseDateTextView = (TextView) view.findViewById(R.id.releaseDateTextView);
+      writerTextView = (TextView) view.findViewById(R.id.writerTextView);
       ratingTextView = (TextView) view.findViewById(R.id.ratingTextView);
       yearTextView = (TextView) view.findViewById(R.id.yearTextView);
       durationTextView = (TextView) view.findViewById(R.id.durationTextView);
@@ -131,7 +131,7 @@ public class DetailsFragment extends Fragment
             arguments.putCharSequence("title", titleTextView.getText());
             arguments.putCharSequence("director", directorTextView.getText());
             arguments.putCharSequence("genre", genreTextView.getText());
-            arguments.putCharSequence("releaseDate", releaseDateTextView.getText());
+            arguments.putCharSequence("writer", writerTextView.getText());
             arguments.putCharSequence("rating", ratingTextView.getText());
             arguments.putCharSequence("year", yearTextView.getText());
             arguments.putCharSequence("duration", durationTextView.getText());            
@@ -170,7 +170,7 @@ public class DetailsFragment extends Fragment
          int titleIndex = result.getColumnIndex("title");
          int directorIndex = result.getColumnIndex("director");
          int genreIndex = result.getColumnIndex("genre");
-         int releaseDateIndex = result.getColumnIndex("releaseDate");
+         int writerIndex = result.getColumnIndex("writer");
          int ratingIndex = result.getColumnIndex("rating");
          int yearIndex = result.getColumnIndex("year");
          int durationIndex = result.getColumnIndex("duration");
@@ -179,7 +179,7 @@ public class DetailsFragment extends Fragment
          titleTextView.setText(result.getString(titleIndex));
          directorTextView.setText(result.getString(directorIndex));
          genreTextView.setText(result.getString(genreIndex));
-         releaseDateTextView.setText(result.getString(releaseDateIndex));
+         writerTextView.setText(result.getString(writerIndex));
          ratingTextView.setText(result.getString(ratingIndex));
          yearTextView.setText(result.getString(yearIndex));
          durationTextView.setText(result.getString(durationIndex));

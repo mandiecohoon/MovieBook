@@ -39,10 +39,10 @@
         </EditText>
 
         <EditText
-            android:id="@+id/releaseDateEditText"
+            android:id="@+id/writerEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_releaseDate"
+            android:hint="@string/hint_writer"
             android:imeOptions="actionNext"
             android:inputType="text|date" >
         </EditText>
